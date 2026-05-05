@@ -43,8 +43,8 @@ body.is-leaving{opacity:0;transform:translateY(-6px);transition:opacity .32s eas
 .n-cs-arrow svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round}
 .n-cs-counter{font-family:var(--serif);font-size:16px;font-style:italic;color:var(--muted);padding:0 4px;letter-spacing:-.01em;white-space:nowrap;}
 .n-cs-next{display:flex;align-items:center;gap:8px;margin-left:4px;padding-left:12px;border-left:1px solid var(--b2);}
-.n-cs-next-label{font-family:var(--label);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);}
-.n-cs-next-name{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--muted);white-space:nowrap;max-width:140px;overflow:hidden;text-overflow:ellipsis;}
+.n-cs-next-label{font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);}
+.n-cs-next-name{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--muted);white-space:nowrap;max-width:180px;overflow:hidden;text-overflow:ellipsis;}
 @media(max-width:900px){.n-cs-next{display:none}}
 
 /* Controls */
@@ -235,7 +235,8 @@ body.is-leaving{opacity:0;transform:translateY(-6px);transition:opacity .32s eas
 .anode-ico.multi img{width:11px;height:11px}
 .anode-name{font-family:var(--label);font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text);line-height:1.25;}
 .anode-body{padding:0 14px 14px;border-top:1px solid var(--b2);flex:1;display:flex;flex-direction:column;}
-.anode-desc{font-size:11.5px;color:var(--muted);line-height:1.65;font-weight:300;padding-top:13px;margin-bottom:12px;flex:1;}
+.anode-desc{font-size:13.5px;color:var(--muted);line-height:1.55;font-weight:300;padding-top:13px;margin-bottom:12px;flex:1;}
+.anode-sm .anode-desc{font-size:12.5px;line-height:1.5;}
 .anode-code{font-family:var(--mono);font-size:10px;color:var(--dim);line-height:1.65;background:rgba(0,0,0,.32);padding:7px 9px;border-radius:5px;border:1px solid var(--b2);}
 [data-theme="light"] .anode-code{background:rgba(0,0,0,.04);color:var(--muted)}
 .anode-foot{padding:10px 14px;border-top:1px solid var(--b2);background:rgba(0,0,0,.18);}
@@ -351,7 +352,7 @@ body.is-leaving{opacity:0;transform:translateY(-6px);transition:opacity .32s eas
 .cs-section{padding:80px 52px;border-top:1px solid var(--b2)}
 .cs-section-inner{max-width:960px;margin:0 auto}
 @media(max-width:860px){.cs-section{padding:52px 22px}}
-.section-label{font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin-top:-4px;margin-bottom:36px;}
+.section-label{font-family:var(--label);font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin-top:-4px;margin-bottom:36px;}
 .section-label::before{content:'';width:0;height:1px;background:var(--accent);flex-shrink:0;transition:width 1s cubic-bezier(.19,1,.22,1) .2s}
 .section-label.visible::before{width:16px}
 
@@ -771,10 +772,10 @@ body.lb-open{overflow:hidden}
   <div class="n-cs-nav">
     <a href="#" class="n-cs-arrow disabled" id="nav-prev" title="Anterior"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></a>
     <span class="n-cs-counter">01 / 04</span>
-    <a href="02-crm-e-infraestructura-ia.html" class="n-cs-arrow" id="nav-next" title="Siguiente"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a href="02-revenue-event-ops.html" class="n-cs-arrow" id="nav-next" title="Siguiente"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
     <div class="n-cs-next">
       <span class="n-cs-next-label"><span class="en-only">Next</span><span class="es-only">Sig.</span></span>
-      <span class="n-cs-next-name"><span class="en-only">CRM + AI Infra</span><span class="es-only">CRM + Infraestructura IA</span></span>
+      <span class="n-cs-next-name"><span class="en-only">Revenue Ops</span><span class="es-only">Revenue Ops</span></span>
     </div>
   </div>
   <div class="n-controls">
@@ -793,7 +794,7 @@ body.lb-open{overflow:hidden}
   <a href="/" class="n-drawer-link"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg><span class="en-only">Back to portfolio</span><span class="es-only">Volver al portfolio</span></a>
   <div class="n-drawer-sep"></div>
   <a href="#" class="n-drawer-link" style="opacity:.25;pointer-events:none"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg><span class="en-only">Previous</span><span class="es-only">Anterior</span></a>
-  <a href="02-crm-e-infraestructura-ia.html" class="n-drawer-link"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg><span class="en-only">Next &mdash; CRM + AI Infra</span><span class="es-only">Siguiente &mdash; CRM + Infraestructura IA</span></a>
+  <a href="02-revenue-event-ops.html" class="n-drawer-link"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg><span class="en-only">Next &mdash; Revenue Ops</span><span class="es-only">Siguiente &mdash; Revenue Ops</span></a>
   <div class="n-drawer-sep"></div>
   <div class="n-drawer-row">
     <span class="n-drawer-label"><span class="en-only">Theme</span><span class="es-only">Tema</span></span>
@@ -1327,9 +1328,9 @@ body.lb-open{overflow:hidden}
     <span class="cs-fn-dir">&#8592; <span class="en-only">Previous</span><span class="es-only">Anterior</span></span>
     <span class="cs-fn-name">&mdash;</span>
   </div>
-  <a href="02-crm-e-infraestructura-ia.html" class="cs-fn-item">
+  <a href="02-revenue-event-ops.html" class="cs-fn-item">
     <span class="cs-fn-dir"><span class="en-only">Next</span><span class="es-only">Siguiente</span> &#8594;</span>
-    <span class="cs-fn-name"><span class="en-only">CRM + AI Infra</span><span class="es-only">CRM + Infraestructura IA</span></span>
+    <span class="cs-fn-name"><span class="en-only">Revenue &amp; Event Ops</span><span class="es-only">Revenue &amp; Event Ops</span></span>
   </a>
 </div>
 
