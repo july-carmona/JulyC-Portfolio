@@ -134,7 +134,8 @@ nav.scrolled{background:var(--nav-blur);border-color:var(--ba);box-shadow:0 6px 
 
 /* ─── WORK ───────────────────────────────── */
 .proj-list{display:flex;flex-direction:column;gap:2px}
-.proj{display:grid;grid-template-columns:1fr 1fr;background:var(--bg2);border:1px solid var(--b2);overflow:hidden;transition:border-color .25s}
+.proj{display:grid;grid-template-columns:1fr 1fr;background:var(--bg2);border:1px solid var(--b2);overflow:hidden;transition:border-color .25s,transform .25s;color:inherit;text-decoration:none}
+.proj:hover{transform:translateY(-2px)}
 .proj.feat{grid-template-columns:1fr}
 .proj:hover{border-color:var(--ba)}
 .proj-img{position:relative;overflow:hidden}
@@ -929,53 +930,88 @@ footer p{font-family:var(--label);font-size:10px;letter-spacing:.08em;text-trans
     </div>
   </div>
   <div class="proj-list">
-    <div class="proj feat reveal">
+
+    <!-- 01 — Catálogo del Parque de Innovación (FEAT) -->
+    <a class="proj feat reveal" href="01-catalogo-de-startups.html">
       <div class="proj-img">
         <div class="proj-ph">
           <svg class="proj-ph-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span class="proj-ph-txt">Add Behance screenshot</span>
+          <span class="proj-ph-txt">01 · Catálogo PI</span>
         </div>
         <div class="proj-stats">
-          <div class="pstat"><strong>−40%</strong><span class="en">Process time</span><span class="es">Tiempo proceso</span></div>
-          <div class="pstat"><strong>10K+</strong><span class="en">Contacts</span><span class="es">Contactos</span></div>
-          <div class="pstat"><strong>3</strong><span>Dashboards</span></div>
+          <div class="pstat"><strong>2</strong><span class="en">Surfaces (TV + web)</span><span class="es">Superficies (TV + web)</span></div>
+          <div class="pstat"><strong>1</strong><span class="en">Source of truth</span><span class="es">Fuente única</span></div>
+          <div class="pstat"><strong>Live</strong><span class="en">In Parque CABA</span><span class="es">En Parque CABA</span></div>
         </div>
         <div class="proj-bar"></div>
       </div>
       <div class="proj-info">
-        <div class="proj-tags"><span class="tag">Automation</span><span class="tag">Power BI</span><span class="tag">n8n</span><span class="tag">Process Design</span></div>
-        <h3 class="proj-name en">Parque de Innovación CABA — Tech & Ops Overhaul</h3>
-        <h3 class="proj-name es">Parque de Innovación CABA — Transformación Tech & Ops</h3>
-        <p class="proj-desc en">Centralized 10,000+ contacts into a fully automated system with segmented campaigns. Built Power BI dashboards integrating multiple data sources. Reduced manual processing times end-to-end.</p>
-        <p class="proj-desc es">Centralicé 10.000+ contactos en un sistema automatizado con campañas segmentadas. Construí dashboards en Power BI integrando múltiples fuentes. Reduje tiempos de procesamiento manual end-to-end.</p>
+        <div class="proj-tags"><span class="tag">Vibe Code</span><span class="tag">Airtable</span><span class="tag">Claude Code</span><span class="tag">Make</span><span class="tag">HTML/JS</span></div>
+        <h3 class="proj-name en">Interactive Startup Catalog — Parque de Innovación CABA</h3>
+        <h3 class="proj-name es">Catálogo Interactivo de Startups — Parque de Innovación CABA</h3>
+        <p class="proj-desc en">Dual interface fed from a single Airtable: a TV slider for the physical space and a navigable web catalog for visitors. Make handles the syncs — content updates land on both surfaces with no manual steps.</p>
+        <p class="proj-desc es">Doble interfaz alimentada desde un solo Airtable: slider TV para el espacio físico + catálogo web navegable para visitantes. Make orquesta los syncs — el contenido se actualiza en ambas superficies sin pasos manuales.</p>
       </div>
-    </div>
-    <div class="proj reveal reveal-delay-1">
+    </a>
+
+    <!-- 02 — Revenue & Event Ops -->
+    <a class="proj reveal reveal-delay-1" href="02-revenue-event-ops.html">
       <div class="proj-img">
-        <div class="proj-ph"><svg class="proj-ph-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span class="proj-ph-txt">Add Behance screenshot</span></div>
-        <div class="proj-stats"><div class="pstat"><strong>PM</strong><span>Role</span></div><div class="pstat"><strong>EdTech</strong><span>Domain</span></div></div>
+        <div class="proj-ph"><svg class="proj-ph-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span class="proj-ph-txt">02 · Revenue Ops</span></div>
+        <div class="proj-stats">
+          <div class="pstat"><strong>5+→1</strong><span class="en">Tools → system</span><span class="es">Tools → sistema</span></div>
+          <div class="pstat"><strong>−48%</strong><span class="en">Cycle time</span><span class="es">Ciclo</span></div>
+          <div class="pstat"><strong>10K+</strong><span class="en">Contacts</span><span class="es">Contactos</span></div>
+        </div>
         <div class="proj-bar"></div>
       </div>
       <div class="proj-info">
-        <div class="proj-tags"><span class="tag">EdTech</span><span class="tag">Product</span><span class="tag">OKRs</span><span class="tag">Gov</span></div>
-        <h3 class="proj-name">Academia Digital — GCBA</h3>
-        <p class="proj-desc en">PM for Buenos Aires' public EdTech platform for entrepreneurs. Defined roadmap and OKRs, led UX research, built KPI dashboards for leadership.</p>
-        <p class="proj-desc es">PM de la plataforma EdTech pública de Buenos Aires. Definí roadmap y OKRs, lideré investigación UX y construí dashboards de KPIs para liderazgo.</p>
+        <div class="proj-tags"><span class="tag">Automation</span><span class="tag">n8n</span><span class="tag">Airtable</span><span class="tag">Claude API</span><span class="tag">Brevo</span><span class="tag">Tango ERP</span></div>
+        <h3 class="proj-name en">Revenue & Event Operations System — Parque de Innovación CABA</h3>
+        <h3 class="proj-name es">Sistema de Revenue & Event Ops — Parque de Innovación CABA</h3>
+        <p class="proj-desc en">One Airtable record per event, end-to-end. n8n drives a 7-stage pipeline, Brevo sends the right email per stage, Tango fires invoices from codified templates, and Claude refreshes each event's brief daily from email threads.</p>
+        <p class="proj-desc es">Un solo record en Airtable por evento, end-to-end. n8n maneja 7 etapas de pipeline, Brevo envía el mail correcto por etapa, Tango dispara facturas desde templates codificadas, y Claude refresca el brief de cada evento todos los días desde los mails.</p>
       </div>
-    </div>
-    <div class="proj reveal reveal-delay-2">
+    </a>
+
+    <!-- 03 — Synerfy -->
+    <a class="proj reveal reveal-delay-2" href="03-synerfy.html">
       <div class="proj-img">
-        <div class="proj-ph"><svg class="proj-ph-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span class="proj-ph-txt">Add Behance screenshot</span></div>
-        <div class="proj-stats"><div class="pstat"><strong>CPO</strong><span>Role</span></div><div class="pstat"><strong>B2B</strong><span>Domain</span></div></div>
+        <div class="proj-ph"><svg class="proj-ph-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span class="proj-ph-txt">03 · Synerfy</span></div>
+        <div class="proj-stats">
+          <div class="pstat"><strong>Multi</strong><span class="en">Tenant</span><span class="es">Multi-tenant</span></div>
+          <div class="pstat"><strong>White</strong><span class="en">Label</span><span class="es">Label</span></div>
+          <div class="pstat"><strong>E2E</strong><span class="en">Build</span><span class="es">Build</span></div>
+        </div>
         <div class="proj-bar"></div>
       </div>
       <div class="proj-info">
-        <div class="proj-tags"><span class="tag">B2B SaaS</span><span class="tag">CPO</span><span class="tag">MVP</span></div>
-        <h3 class="proj-name">Synerfy — B2B Networking Platform</h3>
-        <p class="proj-desc en">Co-founded and led product as CPO. Defined strategy, architecture and roadmap end-to-end. Led UX research and coordinated technical team through MVP validation.</p>
-        <p class="proj-desc es">Co-fundé y lideré producto como CPO. Definí estrategia, arquitectura y roadmap end-to-end. Lideré investigación UX y coordiné equipo técnico en la validación del MVP.</p>
+        <div class="proj-tags"><span class="tag">Product Build</span><span class="tag">Claude Code</span><span class="tag">Airtable</span><span class="tag">n8n</span><span class="tag">Tailwind</span></div>
+        <h3 class="proj-name">Synerfy — White-labeled B2B Networking Platform</h3>
+        <p class="proj-desc en">Co-founded and shipped the platform end-to-end. One admin panel deploys multi-tenant networking events with custom branding, automatic registration, digital cards and post-event analytics — no code touched per client.</p>
+        <p class="proj-desc es">Co-fundé y construí la plataforma end-to-end. Un solo panel admin deploya eventos de networking multi-tenant con branding custom, registro automático, tarjeta digital y analítica post-evento — sin tocar código por cliente.</p>
       </div>
-    </div>
+    </a>
+
+    <!-- 04 — Educabot Project Hub -->
+    <a class="proj reveal reveal-delay-3" href="04-educabot.html">
+      <div class="proj-img">
+        <div class="proj-ph"><svg class="proj-ph-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span class="proj-ph-txt">04 · Educabot Hub</span></div>
+        <div class="proj-stats">
+          <div class="pstat"><strong>3→1</strong><span class="en">Teams in one view</span><span class="es">Equipos en una vista</span></div>
+          <div class="pstat"><strong>Live</strong><span class="en">Project state</span><span class="es">Estado en vivo</span></div>
+          <div class="pstat"><strong>0</strong><span class="en">Status meetings</span><span class="es">Reuniones de status</span></div>
+        </div>
+        <div class="proj-bar"></div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags"><span class="tag">Vibe Code</span><span class="tag">Lovable</span><span class="tag">Supabase</span><span class="tag">n8n</span><span class="tag">Internal Tool</span></div>
+        <h3 class="proj-name">Educabot — Project Delivery Hub</h3>
+        <p class="proj-desc en">Internal tool that centralized 3 disconnected teams (tech, pedagogy, sales) into one real-time view of every educational project. Replaced weekly status meetings with always-on visibility and milestone alerts for leadership.</p>
+        <p class="proj-desc es">Herramienta interna que centralizó 3 equipos desconectados (tech, pedagogía, comercial) en una vista única de cada proyecto educativo. Reemplazó las reuniones semanales de status con visibilidad permanente y alertas de hitos para el liderazgo.</p>
+      </div>
+    </a>
+
   </div>
 </section>
 
